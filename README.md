@@ -30,7 +30,6 @@ Used essential libraries:
 
 
 ### **2. Data Exploration**
-- Add a new column **Price_sq.ft** to indicate price per sqaure feet
 - Checked data info and summary statistics  
 - Verified missing values  
 - Verified duplicated rows  
@@ -49,7 +48,7 @@ split = StratifiedShuffleSplit(n_splits=1, test_size=0.2, random_state=42)
 ```
 
 ### **4. Handle Outlier**
-- Handle outlier in area and Price_sq.ft column using IQR method and performing capping
+- Handle outlier in area column using IQR method and performing capping
 
 ### **5. Ordinal Encoding**
 - perform Ordinal Encoding on furnishingstatus column with order **['unfurnished','semi-furnished','furnished']**
@@ -58,9 +57,9 @@ split = StratifiedShuffleSplit(n_splits=1, test_size=0.2, random_state=42)
 
 ### **7. Evaluate Model**
 - Evaluate model using R2 score, MAE and RMSE
-- R2: 0.8865035087266951
-- MAE: 411392.73111527966
-- RMSE: 613849.9736302127
+- R2: 0.7026299010925842
+- MAE: 730846.9802995496
+- RMSE: 993618.5078248533
 
 ### **8. Cross validation**
 I evaluated the model using **cross-validation** to measure how consistently the model performs across different subsets of the data.
